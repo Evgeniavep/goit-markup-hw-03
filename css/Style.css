@@ -37,6 +37,7 @@ img {
 
 .logo-studio {
   color: var(--main-text);
+  margin-right: 93px;
 }
 
 /* навигация шапка */
@@ -50,8 +51,6 @@ img {
 .header-nav {
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-bottom: 1px solid var(--grey-border-light);
 }
 
@@ -60,10 +59,13 @@ img {
   color: var(--blue-text);
 }
 
-.site-nav .nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 50px;
+.nav-item {
+  padding: 32px 0px 32px 0px;
+  margin-left: 50px;
+}
+
+.nav-item:first-child {
+  margin-left: 0px;
 }
 
 .nav-link {
@@ -93,16 +95,16 @@ img {
   color: var(--grey-text);
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 /* герой */
 
-.hero-container {
+.hero {
   background-color: var(--dark-back);
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -208,6 +210,7 @@ img {
 
 .team-title {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-list .h3 {
@@ -271,19 +274,10 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 
-.filter-button {
-  border: none;
-  margin-right: 8px;
-}
-
-/* .filter-button:not(:last-child) {
-  margin-right: 8px;
-} */
-
-.filter-button {
+.filter-item {
   background: var(--grey-button);
   width: 128px;
   height: 38px;
@@ -293,10 +287,19 @@ img {
   line-height: 1.6;
   color: var(--main-text);
   border-radius: 4px;
+  margin-right: 8px;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter-button {
+  margin-right: 8px;
+}
+
+.filter-button :last-child {
+  margin-right: 0px;
+}
+
+.filter-item:hover,
+.filter-item:focus {
   background: var(--blue-text);
   color: var(--white-text);
 }
@@ -306,13 +309,14 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
 
+.cards-items {
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.portfolio-card {
+.portfolio-card-thumb {
   outline: 1px solid var(--grey-border-light);
   height: 404px;
   width: 370px;
@@ -322,12 +326,12 @@ img {
   margin-top: 30px;
 }
 
-.cards .p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--grey-text);
-  margin-top: 4px;
+.card-title {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  text-align: center;
 }
 
 .cards .h3 {
@@ -335,12 +339,12 @@ img {
   font-size: 18px;
   line-height: 2;
   color: var(--main-text);
-  margin-top: 20px;
 }
 
-.card-title {
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 54px;
+.cards .p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--grey-text);
+  margin-top: 4px;
 }
