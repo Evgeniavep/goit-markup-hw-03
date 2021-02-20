@@ -51,7 +51,7 @@ img {
 .header-nav {
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--grey-border-light);
+  width: 100%;
 }
 
 .site-nav .nav-link:hover,
@@ -142,10 +142,18 @@ img {
   display: none;
 }
 
-.advantages-list {
-  display: flex;
+/* .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+} */
+
+.advantages-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
 }
 
 .advantages-list > .li {
@@ -169,6 +177,10 @@ img {
 
 /* Чем мы занимаемся */
 
+.services-container {
+  padding-bottom: 94px;
+}
+
 .services-title {
   text-align: center;
   margin-bottom: 50px;
@@ -176,7 +188,6 @@ img {
 
 .services-images {
   display: flex;
-  margin-bottom: 94px;
   flex-basis: calc(100% / 3);
   justify-content: space-between;
 }
@@ -268,12 +279,13 @@ img {
 
 .filter-container {
   padding-bottom: 94px;
+  padding-top: 94px;
+  border-top: 1px solid var(--grey-border-light);
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
